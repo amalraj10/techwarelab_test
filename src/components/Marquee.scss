@@ -1,0 +1,58 @@
+.marquee {
+  background: #282828;
+  padding: 2rem 0;
+  overflow: hidden;
+  position: relative;
+
+  &__container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__track {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    will-change: transform;
+  }
+
+  &__item {
+    flex-shrink: 0;
+
+    img {
+      height: 25px;
+      width: auto;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      filter: brightness(0) invert(1);
+    }
+
+    &:hover img {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+
+    &__track {
+      gap: 3rem;
+    }
+
+    &__item img {
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 0;
+
+    &__track {
+      gap: 2.5rem;
+    }
+
+    &__item img {
+      height: 32px;
+    }
+  }
+}
