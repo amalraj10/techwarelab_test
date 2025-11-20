@@ -1,7 +1,7 @@
 import './Footer.scss';
-import fbIcon from '../assets/sm_icons/fb_icon.svg';
-import linkedinIcon from '../assets/sm_icons/in_icon.svg';
-import instaIcon from '../assets/sm_icons/Insta_icon.svg';
+import fbIcon from '../assets/sm_Icons/fb_icon.svg';
+import linkedinIcon from '../assets/sm_Icons/in_icon.svg';
+import instaIcon from '../assets/sm_Icons/Insta_icon.svg';
 
 const SOCIAL_LINKS = [
     {
